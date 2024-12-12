@@ -40,7 +40,11 @@
         <link rel="stylesheet" href="css/responsive.css">
 		<!-- modernizr css -->
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    </head>
+
+        <!-- sweetalert2 -->
+         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   
+        </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -136,13 +140,13 @@
                                     <li><a href="index.html">HOME</a></li>
                                     <li><a href="shop.html">FEATURED</a></li>
                                     <li><a href="shop.html">REVIEW BOOK</a></li>
-                                    <li><a href="about.html">ABOUT AUTHOR</a></li>
+                                    <li><a href="about.html">ABOUT</a></li>
                                     <li><a href="#">pages</a>
                                         <ul class="sub-menu">
                                             <li><a href="about.html">About Us</a></li>
                                             <li><a href="cart.html">Cart Page</a></li>
                                             <li><a href="checkout.html">Check Out</a></li>
-                                            <li><a href="contact.html">Contact</a></li>
+                                         
                                             <li><a href="login.html">Login</a></li>
                                             <li><a href="my-account.html">My Account</a></li>
                                             <li><a href="shop.html">Shopping Page</a></li>
@@ -152,6 +156,7 @@
                                         </ul>
                                     </li>
                                     <li><a href="contact.html">CONTACT</a></li>
+                                    <li><a href="login.html">Login/Signup</a></li>
                                 </ul>
                             </nav>
                         </div>                        
@@ -242,7 +247,7 @@
                                     <li><a href="index.html">HOME</a></li>
                                     <li><a href="shop.html">FEATURED</a></li>
                                     <li><a href="shop.html">REVIEW BOOK</a></li>
-                                    <li><a href="about.html">ABOUT AUTHOR</a></li>
+                                    <li><a href="about.html">ABOUT</a></li>
                                     <li><a href="#">pages</a>
                                         <ul>
                                             <li><a href="about.html">About Us</a></li>
@@ -258,6 +263,8 @@
                                         </ul>
                                     </li>
                                     <li><a href="contact.html">CONTACT</a></li>
+                                    <li><a href="login.html">Login/signup</a></li>
+                                    
 								</ul>
 							</nav>
 						</div>
@@ -290,12 +297,24 @@
            <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-sm-6">
-                        <form action="#" class="create-account-form" method="post">
+                        <form  class="create-account-form" id="register">
                             <h2 class="heading-title">
                                 CREATE AN ACCOUNT
                             </h2>
                             <p class="form-row">
-                                <input type="email" placeholder="Email address">
+                                <input type="text" placeholder="Enter Full Name" id="name" required>
+                            </p>
+                            <p class="form-row">
+                                <input type="email" placeholder="Email Address" id="username" required>
+                            </p>
+                            <!-- <p class="form-row">
+                                <input type="password" placeholder="Enter Password" id="pass" required>
+                            </p> -->
+                            <p class="form-row">
+                                <input type="password" placeholder="Enter Password" id="password" required>
+                            </p>
+                            <p class="form-row">
+                                <input hidden id="role" value="USER">
                             </p>
                             <div class="submit">					
                                 <button name="submitcreate" id="submitcreate" type="submit" class="btn-default">
@@ -308,15 +327,15 @@
                         </form>
                     </div>
                     <div class="col-md-6 col-sm-6">
-                       <form action="#" class="create-account-form" method="post">
+                       <form id="login" class="create-account-form" >
                             <h2 class="heading-title">
                                 ALREADY RESIGTERED?
                             </h2>
                             <p class="form-row">
-                                <input type="email" placeholder="Email address">
+                                <input type="email" placeholder="Email address" id="uname">
                             </p>
                             <p class="form-row">
-                                <input type="password" placeholder="Password">
+                                <input type="password" placeholder="Password" id="pwd">
                             </p>
                             <p class="lost-password form-group">
                                 <a href="#" rel="nofollow">Forgot your password?</a>
@@ -334,6 +353,7 @@
                 </div>               
            </div>
         </div>
+        
         <!-- Loging Area End -->
 		<!-- Footer Area Start -->
 		<footer>
@@ -343,7 +363,7 @@
 		                <div class="col-md-3 col-sm-8">
 		                    <div class="footer-left">
 		                        <a href="index.html">
-		                            <img src="img/logo-2.png" alt="">
+		                            <img src="img/logo.jpeg" width="100px" style="border-radius: 200px;" alt="">
 		                        </a>
 		                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
 		                        <ul class="footer-contact">
@@ -357,7 +377,7 @@
 		                            </li>
 		                            <li>
 		                                <i class="flaticon-web"></i>
-		                                info@bookstore.com
+		                                info@navneetlawstudios.com
 		                            </li>
 		                        </ul>
 		                    </div>
@@ -453,7 +473,7 @@
 		            <div class="row">
 		                <div class="col-md-6">
                             <div class="footer-bottom-left pull-left">
-                                <p>Copyright &copy; 2016 <span><a href="#">DevItems</a></span>. All Right Reserved.</p>
+                                <p>Copyright &copy; 2024 <span><a href="#">Navneet Law Studios</a></span>. All Right Reserved.</p>
                             </div>
 		                </div>
 		                <div class="col-md-6">
@@ -485,7 +505,9 @@
 		<!-- jquery Meanmenu js -->
         <script src="js/jquery.meanmenu.js"></script>
 		<!-- wow js -->
-        <script src="js/wow.min.js"></script>	
+        <script src="js/wow.min.js"></script>
+        	<!--my own js  -->
+        <script src="js/myJs/login.js"></script>	
 		<script>
 			new WOW().init();
 		</script>

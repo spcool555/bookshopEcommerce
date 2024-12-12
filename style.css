@@ -1030,7 +1030,8 @@ body {
 /*  13.	About Page CSS
 /*----------------------------------------*/
 .breadcrumbs-area {
-  background: rgba(0, 0, 0, 0) url("img/header-bg.jpg") no-repeat scroll center center;
+  background: rgba(0, 0, 0, 0) url("https://t3.ftcdn.net/jpg/08/40/92/84/240_F_840928447_9LsRY7deEDz3mtWq2Rj9Ayi9oWUiU9s0.jpg") no-repeat scroll center center;
+  background-size: cover;
   color: #fefefe;
   text-align: center;
   text-transform: capitalize;
