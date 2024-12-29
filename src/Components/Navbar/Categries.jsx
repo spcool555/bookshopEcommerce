@@ -59,7 +59,7 @@ export const Categories = () => {
             <PopoverTrigger>
               <Center fontWeight={'600'} _hover={{ color: "#2874f0", cursor: "pointer" }} className='secnav'>General Legal Reference<ChevronDownIcon _hover={{ transform: "rotate(180deg)" }} /></Center>
             </PopoverTrigger>
-            <PopoverContent w='1100px' >
+            {/* <PopoverContent w='1100px' >
               <PopoverBody display='flex' justifyContent="space-between" >
                 <List w='90%' pl='15px'>
                   <ListItem fontSize='14px' pb='10px' cursor='pointer'>Mobile</ListItem>
@@ -121,7 +121,7 @@ export const Categories = () => {
                   <ListItem fontSize='14px' pb='10px' cursor='pointer'>Sports & Action</ListItem>
                 </List>
               </PopoverBody>
-            </PopoverContent>
+            </PopoverContent> */}
           </Popover>
 
           {/* =========================================tv Appliances==== */}
@@ -129,7 +129,7 @@ export const Categories = () => {
             <PopoverTrigger>
               <Center fontWeight={'600'} _hover={{ color: "#2874f0", cursor: "pointer" }} className='secnav'>Constitutional Law<ChevronDownIcon _hover={{ transform: "rotate(180deg)" }} /></Center>
             </PopoverTrigger>
-            <PopoverContent w='1200px'  >
+            {/* <PopoverContent w='1200px'  >
 
 
 
@@ -166,7 +166,7 @@ export const Categories = () => {
                 </List>
 
               </PopoverBody>
-            </PopoverContent>
+            </PopoverContent> */}
           </Popover>
           {/* ======================men will be men=============== */}
           <Popover trigger='hover' >
@@ -174,7 +174,7 @@ export const Categories = () => {
             <PopoverTrigger>
               <Center fontWeight={'600'} _hover={{ color: "#2874f0", cursor: "pointer" }}>Criminal Law<ChevronDownIcon _hover={{ transform: "rotate(180deg)" }} /></Center>
             </PopoverTrigger>
-            <PopoverContent w='1100px'  >
+            {/* <PopoverContent w='1100px'  >
 
 
 
@@ -211,14 +211,14 @@ export const Categories = () => {
                 </List>
 
               </PopoverBody>
-            </PopoverContent>
+            </PopoverContent> */}
           </Popover>
           {/* ===================================womem=====     */}
           <Popover trigger='hover' >
             <PopoverTrigger>
               <Center fontWeight={'600'} _hover={{ color: "#2874f0", cursor: "pointer" }} className='secnav'>Civil Law<ChevronDownIcon _hover={{ transform: "rotate(180deg)" }} /></Center>
             </PopoverTrigger>
-            <PopoverContent w='1100px' >
+            {/* <PopoverContent w='1100px' >
 
 
 
@@ -245,7 +245,7 @@ export const Categories = () => {
                   ))}
                 </List>
               </PopoverBody>
-            </PopoverContent>
+            </PopoverContent> */}
           </Popover>
           {/* <Center fontWeight={'600'} _hover={{ color: "#2874f0", cursor: "pointer" }} className='secnav'>Civil Law</Center> */}
 
@@ -254,7 +254,7 @@ export const Categories = () => {
             <PopoverTrigger>
               <Center fontWeight={'600'} _hover={{ color: "#2874f0", cursor: "pointer" }} className='secnav'>Family Law<ChevronDownIcon _hover={{ transform: "rotate(180deg)" }} /></Center>
             </PopoverTrigger>
-            <PopoverContent w='1100px'  >
+            {/* <PopoverContent w='1100px'  >
 
 
 
@@ -280,7 +280,7 @@ export const Categories = () => {
                   ))}
                 </List>
               </PopoverBody>
-            </PopoverContent>
+            </PopoverContent> */}
           </Popover>
           <Center fontWeight={'600'} _hover={{ color: "#2874f0", cursor: "pointer" }} className='secnav'>Corporate & Commercial Law</Center>
           <Center fontWeight={'600'} _hover={{ color: "#2874f0", cursor: "pointer" }} className='secnav'>Tax Law</Center>

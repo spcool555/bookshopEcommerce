@@ -224,7 +224,7 @@ const Filter = ({ getCheckboxProps, setPriceRange, priceRange }) => {
         </AccordionPanel>
       </AccordionItem>
 
-      <AccordionItem p={"5px"}>
+      {/* <AccordionItem p={"5px"}>
         <h2>
           <AccordionButton>
             <Box
@@ -255,7 +255,7 @@ const Filter = ({ getCheckboxProps, setPriceRange, priceRange }) => {
             </Stack>
           </CheckboxGroup>
         </AccordionPanel>
-      </AccordionItem>
+      </AccordionItem> */}
 
       {/* <AccordionItem p={"5px"}>
         <h2>
@@ -409,7 +409,7 @@ const Filter = ({ getCheckboxProps, setPriceRange, priceRange }) => {
         </AccordionPanel> */}
       </AccordionItem>
 
-      <AccordionItem p={"5px"}>
+      {/* <AccordionItem p={"5px"}>
         <h2>
           <AccordionButton>
             <Box
@@ -454,7 +454,7 @@ const Filter = ({ getCheckboxProps, setPriceRange, priceRange }) => {
             </Stack>
           </CheckboxGroup>
         </AccordionPanel>
-      </AccordionItem>
+      </AccordionItem> */}
     </Accordion>
   );
 };
